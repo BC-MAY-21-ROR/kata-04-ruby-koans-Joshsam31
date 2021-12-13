@@ -30,7 +30,6 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 # Your goal is to write the score method.
 
 def score(dice)
-  # result = 0
   (1..6).each do |face|
     count = dice.select { |n| n == face }.size
     while count > 0
